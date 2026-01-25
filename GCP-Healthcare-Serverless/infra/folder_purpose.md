@@ -1,4 +1,4 @@
-# Why infra/ folder?
+# infra/ folder
 
 infra/ is a documentation folder.
 
@@ -13,3 +13,4 @@ Purpose:
 ✅ makes project easy to deploy  
 ✅ helps interview explanation  
 ✅ shows professional documentation style
+
