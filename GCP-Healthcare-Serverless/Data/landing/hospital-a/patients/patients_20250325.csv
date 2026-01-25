@@ -1,0 +1,11 @@
+hospital_id,patient_id,full_name,gender,dob,phone,email,address,updated_at,ingestion_ts
+hospital-a,1001,Aarav Sharma,M,1992-05-14,9876500011,aarav.sharma@example.com,"Pune, MH",2025-03-25T09:15:10Z,2025-03-25T09:30:00Z
+hospital-a,1002,Neha Verma,F,1995-11-22,9876500012,neha.verma@example.com,"Mumbai, MH",2025-03-25T09:16:05Z,2025-03-25T09:30:00Z
+hospital-a,1003,Rohit Gupta,M,1988-02-03,9876500013,rohit.gupta@example.com,"Nagpur, MH",2025-03-25T09:17:20Z,2025-03-25T09:30:00Z
+hospital-a,1004,Priya Iyer,F,1990-08-09,9876500014,priya.iyer@example.com,"Nashik, MH",2025-03-25T09:18:45Z,2025-03-25T09:30:00Z
+hospital-a,1005,Kunal Mehta,M,1997-01-30,9876500015,kunal.mehta@example.com,"Thane, MH",2025-03-25T09:20:12Z,2025-03-25T09:30:00Z
+hospital-a,1006,Ananya Singh,F,1993-03-17,9876500016,ananya.singh@example.com,"Aurangabad, MH",2025-03-25T09:21:44Z,2025-03-25T09:30:00Z
+hospital-a,1007,Siddharth Nair,M,1985-12-05,9876500017,siddharth.nair@example.com,"Kolhapur, MH",2025-03-25T09:22:59Z,2025-03-25T09:30:00Z
+hospital-a,1008,Ishita Das,F,1999-06-11,9876500018,ishita.das@example.com,"Solapur, MH",2025-03-25T09:24:18Z,2025-03-25T09:30:00Z
+hospital-a,1009,Vikram Joshi,M,1991-09-28,9876500019,vikram.joshi@example.com,"Satara, MH",2025-03-25T09:25:33Z,2025-03-25T09:30:00Z
+hospital-a,1010,Meera Kulkarni,F,1989-04-19,9876500020,meera.kulkarni@example.com,"Sangli, MH",2025-03-25T09:26:50Z,2025-03-25T09:30:00Z
