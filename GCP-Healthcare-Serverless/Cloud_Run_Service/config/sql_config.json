@@ -1,0 +1,103 @@
+{
+  "project_id": "revcycle-lite-gcp",
+  "bucket_name": "revcycle-lite-bucket",
+
+  "datasets": {
+    "bronze": "revcycle_bronze",
+    "silver": "revcycle_silver",
+    "gold": "revcycle_gold"
+  },
+
+  "gcs_inputs": {
+    "claims_path": "gs://revcycle-lite-bucket/landing/claims/2025/03/*.csv",
+    "cpt_path": "gs://revcycle-lite-bucket/landing/cptcodes/cpt_codes.csv",
+
+    "hospital_a_patients": "gs://revcycle-lite-bucket/landing/hospital-a/patients/*.csv",
+    "hospital_a_encounters": "gs://revcycle-lite-bucket/landing/hospital-a/encounters/*.csv",
+    "hospital_a_transactions": "gs://revcycle-lite-bucket/landing/hospital-a/transactions/*.csv",
+
+    "hospital_b_patients": "gs://revcycle-lite-bucket/landing/hospital-b/patients/*.csv",
+    "hospital_b_encounters": "gs://revcycle-lite-bucket/landing/hospital-b/encounters/*.csv",
+    "hospital_b_transactions": "gs://revcycle-lite-bucket/landing/hospital-b/transactions/*.csv"
+  },
+
+  "bronze_sql_files": [
+    "BQ/Bronze/create_bronze_tables.sql"
+  ],
+
+  "bronze_load": [
+    {
+      "name": "bronze_claims",
+      "source": "claims_path",
+      "target_table": "bronze_claims",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+    {
+      "name": "bronze_cpt_codes",
+      "source": "cpt_path",
+      "target_table": "bronze_cpt_codes",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+
+    {
+      "name": "bronze_patients",
+      "source": "hospital_a_patients",
+      "target_table": "bronze_patients",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+    {
+      "name": "bronze_patients",
+      "source": "hospital_b_patients",
+      "target_table": "bronze_patients",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+
+    {
+      "name": "bronze_encounters",
+      "source": "hospital_a_encounters",
+      "target_table": "bronze_encounters",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+    {
+      "name": "bronze_encounters",
+      "source": "hospital_b_encounters",
+      "target_table": "bronze_encounters",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+
+    {
+      "name": "bronze_transactions",
+      "source": "hospital_a_transactions",
+      "target_table": "bronze_transactions",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    },
+    {
+      "name": "bronze_transactions",
+      "source": "hospital_b_transactions",
+      "target_table": "bronze_transactions",
+      "skip_leading_rows": 1,
+      "write_disposition": "WRITE_TRUNCATE"
+    }
+  ],
+
+  "silver_sql_files": [
+    "BQ/Silver/create_silver_tables.sql",
+    "BQ/Silver/scd2_dim_patient.sql",
+    "BQ/Silver/fact_encounter.sql",
+    "BQ/Silver/fact_transaction.sql",
+    "BQ/Silver/fact_claim.sql"
+  ],
+
+  "gold_sql_files": [
+    "BQ/Gold/create_gold_tables.sql",
+    "BQ/Gold/gold_revenue_kpis.sql",
+    "BQ/Gold/gold_patients_summary.sql"
+  ]
+}
