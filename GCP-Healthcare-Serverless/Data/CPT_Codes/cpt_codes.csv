@@ -1,0 +1,58 @@
+cpt_code,procedure_desc,category
+99201,Office/outpatient visit,Consultation
+99202,Office/outpatient visit,Consultation
+99203,Office/outpatient visit,Consultation
+99204,Office/outpatient visit,Consultation
+99205,Office/outpatient visit,Consultation
+99211,Office/outpatient visit,Consultation
+99212,Office/outpatient visit,Consultation
+99213,Office/outpatient visit,Consultation
+99214,Office/outpatient visit,Consultation
+99215,Office/outpatient visit,Consultation
+93000,Electrocardiogram (ECG),Cardiology
+93005,Electrocardiogram tracing,Cardiology
+93010,Electrocardiogram interpretation,Cardiology
+71020,Chest X-Ray (2 views),Radiology
+71045,Chest X-Ray (single view),Radiology
+71250,CT scan chest (no contrast),Radiology
+71260,CT scan chest (with contrast),Radiology
+72100,X-Ray spine (lumbar),Radiology
+72148,MRI lumbar spine (no contrast),Radiology
+72158,MRI lumbar spine (with contrast),Radiology
+80050,General health panel,Laboratory
+80053,Comprehensive metabolic panel,Laboratory
+80061,Lipid panel,Laboratory
+81001,Urinalysis (automated),Laboratory
+82043,Urine microalbumin,Laboratory
+83036,Hemoglobin A1c (HbA1c),Laboratory
+85025,Complete blood count (CBC),Laboratory
+85610,Prothrombin time (PT),Laboratory
+87070,Culture (bacterial),Laboratory
+87186,Susceptibility studies,Laboratory
+90686,Influenza vaccine,Vaccination
+90715,Tdap vaccine,Vaccination
+90732,Pneumococcal vaccine,Vaccination
+90471,Immunization administration,Vaccination
+90472,Additional vaccine administration,Vaccination
+36415,Venipuncture (blood draw),Procedure
+45378,Colonoscopy diagnostic,Procedure
+45380,Colonoscopy with biopsy,Procedure
+47562,Laparoscopic cholecystectomy,Surgery
+44970,Laparoscopic appendectomy,Surgery
+29881,Knee arthroscopy (meniscectomy),Surgery
+27447,Total knee replacement,Surgery
+93015,Cardiovascular stress test,Cardiology
+94640,Nebulizer treatment,Pulmonology
+94010,Spirometry test,Pulmonology
+97110,Therapeutic exercises,Physiotherapy
+97112,Neuromuscular re-education,Physiotherapy
+97116,Gait training therapy,Physiotherapy
+11721,Nail debridement,Podiatry
+11042,Debridement skin/subcutaneous,Wound Care
+12001,Simple repair of wound,Surgery
+12002,Simple repair of wound,Surgery
+12004,Simple repair of wound,Surgery
+90460,Vaccine admin with counseling,Vaccination
+96372,Therapeutic injection,Procedure
+20610,Joint injection/aspiration,Orthopedics
+20550,Tendon sheath injection,Orthopedics
