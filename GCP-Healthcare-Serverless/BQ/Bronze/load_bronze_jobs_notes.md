@@ -86,6 +86,6 @@ Because:
 So bronze is always clean and consistent.
 
 ---
-## Interview line
 
 > "Bronze layer stores raw data loaded from GCS landing. I refresh Bronze tables on every run using BigQuery load jobs and fixed schemas created using CREATE OR REPLACE."
+
