@@ -13,8 +13,8 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 ## ASCII Diagram
 
 +----------------------------------------------------------+
-|                     GCS Landing Layer                    |
-|           gs://revcycle-lite-bucket/landing/             |
+|GCS Landing Layer                                          |
+|gs://revcycle-lite-bucket/landing/                        |
 |                                                          |
 |  hospital-a/patients/*.csv                               |
 |  hospital-a/encounters/*.csv                             |
