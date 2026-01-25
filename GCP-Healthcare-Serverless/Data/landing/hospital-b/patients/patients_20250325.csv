@@ -1,0 +1,11 @@
+hospital_id,patient_id,full_name,gender,dob,phone,email,address,updated_at,ingestion_ts
+hospital-b,2001,Riya Kapoor,F,1994-07-12,9887700011,riya.kapoor@example.com,"Bengaluru, KA",2025-03-25T09:40:10Z,2025-03-25T09:55:00Z
+hospital-b,2002,Arjun Reddy,M,1991-10-25,9887700012,arjun.reddy@example.com,"Hyderabad, TS",2025-03-25T09:41:30Z,2025-03-25T09:55:00Z
+hospital-b,2003,Shreya Nair,F,1997-02-18,9887700013,shreya.nair@example.com,"Kochi, KL",2025-03-25T09:42:55Z,2025-03-25T09:55:00Z
+hospital-b,2004,Karthik Menon,M,1989-06-06,9887700014,karthik.menon@example.com,"Chennai, TN",2025-03-25T09:44:20Z,2025-03-25T09:55:00Z
+hospital-b,2005,Divya Iyer,F,1993-12-01,9887700015,divya.iyer@example.com,"Coimbatore, TN",2025-03-25T09:45:48Z,2025-03-25T09:55:00Z
+hospital-b,2006,Naveen Kumar,M,1995-03-09,9887700016,naveen.kumar@example.com,"Mysuru, KA",2025-03-25T09:46:59Z,2025-03-25T09:55:00Z
+hospital-b,2007,Anjali Rao,F,1990-09-16,9887700017,anjali.rao@example.com,"Vijayawada, AP",2025-03-25T09:48:15Z,2025-03-25T09:55:00Z
+hospital-b,2008,Pranav Shetty,M,1998-04-27,9887700018,pranav.shetty@example.com,"Mangaluru, KA",2025-03-25T09:49:30Z,2025-03-25T09:55:00Z
+hospital-b,2009,Sneha Pillai,F,1992-11-08,9887700019,sneha.pillai@example.com,"Thiruvananthapuram, KL",2025-03-25T09:50:45Z,2025-03-25T09:55:00Z
+hospital-b,2010,Rahul Jain,M,1987-01-21,9887700020,rahul.jain@example.com,"Madurai, TN",2025-03-25T09:52:05Z,2025-03-25T09:55:00Z
