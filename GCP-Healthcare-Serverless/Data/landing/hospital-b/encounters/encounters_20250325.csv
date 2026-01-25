@@ -1,0 +1,11 @@
+hospital_id,encounter_id,patient_id,encounter_date,encounter_type,department,provider_name,diagnosis_code,updated_at,ingestion_ts
+hospital-b,60001,2001,2025-03-04,OPD,General Medicine,Dr. P. Rao,J02.9,2025-03-25T10:20:10Z,2025-03-25T10:25:00Z
+hospital-b,60002,2002,2025-03-05,OPD,Cardiology,Dr. A. Shetty,I20.9,2025-03-25T10:20:45Z,2025-03-25T10:25:00Z
+hospital-b,60003,2003,2025-03-06,OPD,Dermatology,Dr. S. Nair,L30.9,2025-03-25T10:21:20Z,2025-03-25T10:25:00Z
+hospital-b,60004,2004,2025-03-07,IPD,Orthopedics,Dr. K. Menon,S82.9,2025-03-25T10:21:55Z,2025-03-25T10:25:00Z
+hospital-b,60005,2005,2025-03-08,OPD,Neurology,Dr. D. Iyer,G40.9,2025-03-25T10:22:35Z,2025-03-25T10:25:00Z
+hospital-b,60006,2006,2025-03-09,OPD,ENT,Dr. N. Kumar,H60.9,2025-03-25T10:23:10Z,2025-03-25T10:25:00Z
+hospital-b,60007,2007,2025-03-10,OPD,Pediatrics,Dr. A. Rao,J18.9,2025-03-25T10:23:45Z,2025-03-25T10:25:00Z
+hospital-b,60008,2008,2025-03-11,OPD,Ophthalmology,Dr. P. Shetty,H10.9,2025-03-25T10:24:20Z,2025-03-25T10:25:30Z
+hospital-b,60009,2009,2025-03-12,OPD,Gynecology,Dr. S. Pillai,N39.0,2025-03-25T10:24:55Z,2025-03-25T10:25:30Z
+hospital-b,60010,2010,2025-03-13,OPD,Pulmonology,Dr. R. Jain,J44.9,2025-03-25T10:25:35Z,2025-03-25T10:26:00Z
