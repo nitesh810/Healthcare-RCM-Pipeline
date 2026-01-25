@@ -1,0 +1,11 @@
+hospital_id,encounter_id,patient_id,encounter_date,encounter_type,department,provider_name,diagnosis_code,updated_at,ingestion_ts
+hospital-a,50001,1001,2025-03-05,OPD,Cardiology,Dr. R. Patil,I10,2025-03-25T10:01:10Z,2025-03-25T10:05:00Z
+hospital-a,50002,1002,2025-03-06,OPD,General Medicine,Dr. S. Kulkarni,J06.9,2025-03-25T10:01:45Z,2025-03-25T10:05:00Z
+hospital-a,50003,1003,2025-03-07,OPD,Orthopedics,Dr. A. Deshmukh,M54.5,2025-03-25T10:02:20Z,2025-03-25T10:05:00Z
+hospital-a,50004,1004,2025-03-08,OPD,Dermatology,Dr. P. Shah,L20.9,2025-03-25T10:03:10Z,2025-03-25T10:05:00Z
+hospital-a,50005,1005,2025-03-09,OPD,Neurology,Dr. K. Rao,G43.9,2025-03-25T10:03:45Z,2025-03-25T10:05:00Z
+hospital-a,50006,1006,2025-03-10,OPD,ENT,Dr. N. Shinde,H66.9,2025-03-25T10:04:10Z,2025-03-25T10:05:00Z
+hospital-a,50007,1007,2025-03-11,IPD,Gastroenterology,Dr. V. More,K29.7,2025-03-25T10:04:35Z,2025-03-25T10:05:00Z
+hospital-a,50008,1008,2025-03-12,OPD,Gynecology,Dr. M. Joshi,N92.0,2025-03-25T10:05:05Z,2025-03-25T10:05:30Z
+hospital-a,50009,1009,2025-03-13,OPD,Ophthalmology,Dr. A. Bhide,H52.4,2025-03-25T10:05:30Z,2025-03-25T10:05:30Z
+hospital-a,50010,1010,2025-03-14,OPD,Pulmonology,Dr. S. Naik,J45.909,2025-03-25T10:06:10Z,2025-03-25T10:07:00Z
