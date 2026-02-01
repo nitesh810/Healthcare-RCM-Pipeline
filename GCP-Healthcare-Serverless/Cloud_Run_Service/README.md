@@ -4,8 +4,8 @@ This folder contains the **Cloud Run Function** that runs the complete pipeline.
 
 Deployment:
 
-Cloud Run → Continuously deploy from a repository (GitHub)  
-Cloud Build runs in background automatically
+Cloud Run → Continuously deploy from a repository (GitHub).
+Cloud Build runs in background automatically.
 
 Trigger:
 
@@ -58,5 +58,6 @@ Config controls:
 - GCS input paths
 - Bronze load tables
 - SQL file execution order
+
 
 
