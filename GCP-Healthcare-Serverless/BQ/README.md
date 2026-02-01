@@ -11,7 +11,7 @@ Cloud_Run_Service/main.py
 
 ## Why this folder exists
 
-Instead of writing SQL inside Python code, we keep SQL in separate files so:
+Instead of writing SQL inside Python code, Keeping SQL in separate files so:
 - Code stays clean
 - SQL is easy to read
 - SQL can be changed without rewriting Python
@@ -94,3 +94,4 @@ Cloud Run service:
 ## Interview line
 
 > "I implemented BigQuery transformations using file-based SQL scripts organized by Medallion Architecture and executed them through a serverless Cloud Run controller."
+
