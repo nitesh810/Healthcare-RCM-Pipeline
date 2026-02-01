@@ -3,10 +3,10 @@
 Silver layer = **clean + consistent layer**.
 
 In Silver:
-- We clean raw bronze data
+- Clean raw bronze data
 - Convert datatypes properly (string to int/date/timestamp)
 - Remove duplicates
-- Prepare CDM-like tables (Facts + Dimensions)
+- Prepare CDM(Common Data Model) like tables (Facts + Dimensions)
 - Patient dimension uses SCD Type 2 (history tracking)
 
 ---
@@ -64,3 +64,4 @@ SQL:
 5) fact_claim.sql
 
 Cloud Run reads these SQL files from config/sql_config.json and executes them in BigQuery.
+
