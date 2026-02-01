@@ -77,3 +77,6 @@ WHEN NOT MATCHED THEN
     TRUE,
     S.record_hash
   );
+
+-- FARM_FINGERPRINT generates a deterministic INT64 surrogate key from a concatenated string of hospital_id, patient_id, and updated_at.
+-- It ensures every SCD2 version gets a unique patient_sk, which is used as the dimension primary key for fact table joins.
