@@ -16,10 +16,6 @@ Trigger:
 Pipeline Flow:
 GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver → Gold
 
-### Step 0: Bronze schema (fixed)
-The service runs Bronze schema SQL using `CREATE OR REPLACE`
-so tables always exist and schema is controlled.
-
 ### Step 1: Bronze load (GCS → BigQuery)
 Loads these GCS landing files:
 
@@ -60,3 +56,4 @@ Config controls:
 - GCS input paths
 - Bronze load tables
 - SQL file execution order
+
