@@ -57,6 +57,11 @@ Tables:
 - fact_transaction
 - fact_claim
 
+✅ Key point:
+- Fact table → stores transactional data and references the dimension surrogate key.
+- Dimension table SCD2 → stores historical changes.
+- Together, they allow analytics like: “What was Rahul's city at the time she made the purchase?"
+
 ---
 
 ### Gold (Business / KPI)
@@ -91,6 +96,7 @@ Cloud Run service:
 ---
 
 > "Iimplemented BigQuery transformations using file-based SQL scripts organized by Medallion Architecture and executed them through a serverless Cloud Run controller."
+
 
 
 
