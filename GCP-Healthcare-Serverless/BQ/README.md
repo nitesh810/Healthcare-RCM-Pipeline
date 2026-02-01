@@ -15,7 +15,6 @@ Instead of writing SQL inside Python code, Keeping SQL in separate files so:
 - Code stays clean
 - SQL is easy to read
 - SQL can be changed without rewriting Python
-- Interview explanation becomes strong (best practice)
 
 ---
 
@@ -94,4 +93,5 @@ Cloud Run service:
 ## Interview line
 
 > "I implemented BigQuery transformations using file-based SQL scripts organized by Medallion Architecture and executed them through a serverless Cloud Run controller."
+
 
