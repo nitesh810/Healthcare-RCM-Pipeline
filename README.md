@@ -1,6 +1,6 @@
 # GCP Healthcare RCM Serverless Data Engineering Project (Medallion)
 
-This is an **end-to-end serverless Data Engineering project on Google Cloud Platform (GCP)** for **Healthcare Revenue Cycle Management (RCM)**.
+This is an **end-to-end serverless project on Google Cloud Platform (GCP)** for **Healthcare Revenue Cycle Management (RCM)**.
 
 It demonstrates how to build a modern pipeline using:
 
