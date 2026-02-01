@@ -4,7 +4,7 @@
 # Cloud Run → Continuously deploy from a repository (GitHub)
 # Cloud Build runs in background automatically
 
-# Final Pipeline Flow:
+# Pipeline Flow:
 # GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver → Gold
 
 import os
@@ -19,7 +19,7 @@ BRONZE_DATASET = "revcycle_bronze"
 # path to config file
 SQL_CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config", "sql_config.json")
 
-# ✅ SIMPLE: project root directory
+# project root directory
 # __file__ = Cloud_Run_Service/main.py
 # dirname(__file__) = Cloud_Run_Service/
 # dirname(dirname(__file__)) = project root folder
@@ -36,7 +36,7 @@ def rcm_pipeline_controller(request):
         with open(SQL_CONFIG_PATH, "r", encoding="utf-8") as f:
             config = json.load(f)
 
-        # 0) Create bronze tables schema (create or replace)
+        # 0) Create bronze tables schema
         for sql_file in config["bronze_sql_files"]:
             sql_path = os.path.join(ROOT_DIR, sql_file)   
             with open(sql_path, "r", encoding="utf-8") as f:
@@ -95,3 +95,4 @@ def rcm_pipeline_controller(request):
             500,
             {"Content-Type": "application/json"}
         )
+
