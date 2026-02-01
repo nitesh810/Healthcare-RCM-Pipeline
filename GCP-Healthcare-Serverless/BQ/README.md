@@ -90,8 +90,7 @@ Cloud Run service:
 3) BigQuery executes the query
 ---
 
-## Interview line
+> "Iimplemented BigQuery transformations using file-based SQL scripts organized by Medallion Architecture and executed them through a serverless Cloud Run controller."
 
-> "I implemented BigQuery transformations using file-based SQL scripts organized by Medallion Architecture and executed them through a serverless Cloud Run controller."
 
 
