@@ -63,14 +63,14 @@ def rcm_pipeline_controller(request):
 
         # 2) Silver SQL execution
         for sql_file in config["silver_sql_files"]:
-            sql_path = os.path.join(ROOT_DIR, sql_file)   # ✅ simplified path
+            sql_path = os.path.join(ROOT_DIR, sql_file)   
             with open(sql_path, "r", encoding="utf-8") as f:
                 sql_text = f.read()
             bq.query(sql_text).result()
 
         # 3) Gold SQL execution
         for sql_file in config["gold_sql_files"]:
-            sql_path = os.path.join(ROOT_DIR, sql_file)   # ✅ simplified path
+            sql_path = os.path.join(ROOT_DIR, sql_file)  
             with open(sql_path, "r", encoding="utf-8") as f:
                 sql_text = f.read()
             bq.query(sql_text).result()
@@ -95,4 +95,5 @@ def rcm_pipeline_controller(request):
             500,
             {"Content-Type": "application/json"}
         )
+
 
