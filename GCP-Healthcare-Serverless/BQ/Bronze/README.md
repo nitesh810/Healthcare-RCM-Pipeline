@@ -54,9 +54,3 @@ Reference CPT codes file.
 Source:
 - gs://revcycle-lite-bucket/landing/cptcodes/cpt_codes.csv
 
----
-
-## Notes
-- Tables are created using `CREATE OR REPLACE` (schema always updated if changes happen)
-- Tables are loaded using BigQuery Load Job
-- `WRITE_TRUNCATE` is used to refresh bronze each pipeline run
