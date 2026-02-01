@@ -2,7 +2,7 @@
 
 This is an **end-to-end serverless project on Google Cloud Platform (GCP)** for **Healthcare Revenue Cycle Management (RCM)**.
 
-It demonstrates how to build a modern pipeline using:
+It demonstrates a ETL pipeline using:
 
 ✅ GCS Landing Layer (CSV files)  
 ✅ Cloud Scheduler (orchestration trigger)  
