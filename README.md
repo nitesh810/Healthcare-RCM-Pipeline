@@ -24,7 +24,7 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 Cloud Scheduler (trigger)
         │
         ▼
-Cloud Run Service (this main.py)
+Cloud Run Service (main.py)
         │
         ├── Read config JSON
         │
