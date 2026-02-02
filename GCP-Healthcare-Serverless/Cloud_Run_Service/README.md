@@ -59,6 +59,24 @@ Config controls:
 - Bronze load tables
 - SQL file execution order
 
+## Pipeline Flow
+
+```
+Cloud Scheduler (trigger)
+        │
+        ▼
+Cloud Run Service (main.py)
+        │
+        ├── Read config JSON
+        │
+        ├── Create Bronze Tables
+        │
+        ├── Load CSV from GCS → Bronze
+        │
+        ├── Execute Silver SQL (SCD, cleansing)
+        │
+        └── Execute Gold SQL (mart/aggregates)
+```
 
 
 
