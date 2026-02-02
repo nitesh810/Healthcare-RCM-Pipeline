@@ -121,4 +121,72 @@ Gold tables:
 
 ---
 
-> "I used GitHub-based Cloud Run deployment and Scheduler-based orchestration to run a serverless ETL pipeline on GCP using BigQuery Medallion Architecture."
+## Cloud Build – CI/CD Flow for Cloud Run (Background Process)
+
+```
+Developer Changes Code
+(main branch in GitHub)
+        │
+        │  Only when files are modified:
+        │  - main.py
+        │  - config/sql_config.json
+        │  - SQL files inside BQ/
+        │  - Dockerfile / requirements
+        ▼
+┌──────────────────────────────────────┐
+│        Cloud Build Trigger           │
+│  (GitHub → Cloud Build Connection)   │
+└──────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────┐
+│ Build Steps                          │
+│ 1. Pull latest repository            │
+│ 2. Build Docker image                │
+│ 3. Run container build checks        │
+└──────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────┐
+│ Push Image to Artifact Registry      │
+│ revcycle-pipeline-image              │
+└──────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────┐
+│ Deploy NEW VERSION to Cloud Run      │
+│ Service: rcm-pipeline-controller     │
+└──────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────┐
+│ Cloud Run Service Updated            │
+│ Scheduler triggers latest version    │
+└──────────────────────────────────────┘
+```
+
+### Important Behavior
+
+- ✅ **New Cloud Run deployment happens only when code changes**
+- If no file is modified →  
+  - Cloud Build does NOT create new image  
+  - Existing Cloud Run version continues running
+
+#### Files that cause new deployment
+
+- `Cloud_Run_Service/main.py`
+- `config/sql_config.json`
+- Any SQL inside `BQ/Bronze`, `BQ/Silver`, `BQ/Gold`
+- `Dockerfile`
+- `requirements.txt`
+
+#### Files that do NOT trigger deployment
+
+- GCS CSV data changes  
+- BigQuery table data changes  
+- Scheduler configuration
+
+---
+
+> "Used GitHub-based Cloud Run deployment and Scheduler-based orchestration to run a serverless ETL pipeline on GCP using BigQuery Medallion Architecture."
+
