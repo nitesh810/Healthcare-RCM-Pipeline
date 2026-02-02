@@ -21,20 +21,57 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 ## Architecture Flow
 
 ```
-Cloud Scheduler (trigger)
-        │
-        ▼
-Cloud Run Service (main.py)
-        │
-        ├── Read config JSON
-        │
-        ├── Create Bronze Tables
-        │
-        ├── Load CSV from GCS → Bronze
-        │
-        ├── Execute Silver SQL (SCD, cleansing)
-        │
-        └── Execute Gold SQL (mart/aggregates)
++---------------------------+
+|        GCS LANDING        |
+|  hospital-a / hospital-b |
+|  - patients.csv          |
+|  - encounters.csv        |
+|  - transactions.csv     |
+|  claims/*.csv            |
+|  cpt_codes.csv           |
++------------+--------------+
+             |
+             v
++---------------------------+
+|     Cloud Scheduler       |
+|   (daily HTTP trigger)    |
++------------+--------------+
+             |
+             v
++---------------------------+
+|        Cloud Run          |
+|   Pipeline Controller    |
+|      (main.py)           |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   BigQuery BRONZE         |
+|  revcycle_bronze          |
+|  - bronze_patients        |
+|  - bronze_encounters      |
+|  - bronze_transactions   |
+|  - bronze_claims          |
+|  - bronze_cpt_codes       |
++------------+--------------+
+             |
+             v
++---------------------------+
+|   BigQuery SILVER         |
+|  revcycle_silver          |
+|  - dim_patient (SCD2)     |
+|  - fact_encounter         |
+|  - fact_transaction       |
+|  - fact_claim             |
++------------+--------------+
+             |
+             v
++---------------------------+
+|    BigQuery GOLD          |
+|  revcycle_gold            |
+|  - gold_revenue_kpis      |
+|  - gold_patients_summary  |
++---------------------------+
 ```
 
 
