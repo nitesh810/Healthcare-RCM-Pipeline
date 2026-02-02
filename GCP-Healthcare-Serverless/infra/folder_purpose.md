@@ -7,11 +7,6 @@ It contains:
 - bucket structure
 - scheduler setup guide
 
-It is NOT code.
-
 **Purpose:**
 - Makes project easy to deploy  
 - Explanation of this project 
-
-
-
