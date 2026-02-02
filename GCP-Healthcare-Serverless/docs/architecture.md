@@ -14,8 +14,8 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                     GCS LANDING LAYER                             │
-│  gs://revcycle-lite-bucket/landing/                               │
+│                     GCS LANDING LAYER                            │
+│  gs://revcycle-lite-bucket/landing/                              │
 │                                                                  │
 │  ├── hospital-a/                                                 │
 │  │     ├── patients/*.csv                                        │
@@ -73,6 +73,7 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 - Cloud Scheduler triggers daily pipeline run
 - Cloud Run executes BigQuery loads and SQL scripts
 - Bronze/Silver/Gold tables are created using `CREATE OR REPLACE`
+
 
 
 
