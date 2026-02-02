@@ -23,12 +23,12 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 ```
 +---------------------------+
 |        GCS LANDING        |
-|  hospital-a / hospital-b |
-|  - patients.csv          |
-|  - encounters.csv        |
-|  - transactions.csv     |
-|  claims/*.csv            |
-|  cpt_codes.csv           |
+|  hospital-a / hospital-b  |
+|  - patients.csv           |
+|  - encounters.csv         |
+|  - transactions.csv       |
+|  claims/*.csv             |
+|  cpt_codes.csv            |
 +------------+--------------+
              |
              v
@@ -40,8 +40,8 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
              v
 +---------------------------+
 |        Cloud Run          |
-|   Pipeline Controller    |
-|      (main.py)           |
+|   Pipeline Controller     |
+|      (main.py)            |
 +------------+--------------+
              |
              v
@@ -50,7 +50,7 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 |  revcycle_bronze          |
 |  - bronze_patients        |
 |  - bronze_encounters      |
-|  - bronze_transactions   |
+|  - bronze_transactions    |
 |  - bronze_claims          |
 |  - bronze_cpt_codes       |
 +------------+--------------+
