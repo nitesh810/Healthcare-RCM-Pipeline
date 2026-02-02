@@ -86,11 +86,6 @@ Scheduler details:
 - Method: POST
 - URL: Cloud Run Service URL
 
-Request body (optional):
-{}
-Content-Type:
-application/json
-
 ---
 
 ## 5) Check pipeline output
@@ -184,6 +179,7 @@ Developer Changes Code
 ---
 
 > "Used GitHub-based Cloud Run deployment and Scheduler-based orchestration to run a serverless ETL pipeline on GCP using BigQuery Medallion Architecture."
+
 
 
 
