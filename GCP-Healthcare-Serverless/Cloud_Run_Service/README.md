@@ -49,7 +49,7 @@ Gold dataset:
 
 ---
 
-## Config-driven pipeline
+## Config file
 
 The service reads config from:
 Cloud_Run_Service/config/sql_config.json
@@ -77,6 +77,7 @@ Cloud Run Service (main.py)
         │
         └── Execute Gold SQL (mart/aggregates)
 ```
+
 
 
 
