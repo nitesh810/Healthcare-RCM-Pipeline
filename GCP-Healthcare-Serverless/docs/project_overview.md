@@ -22,7 +22,6 @@ RCM covers the full lifecycle from:
 - **Cloud Scheduler**: daily trigger
 - **Cloud Run**: pipeline controller (GitHub deploy)
 - **BigQuery**: Bronze/Silver/Gold datasets and transformations
-- **Cloud Logging**: monitoring logs
 
 ---
 
@@ -63,3 +62,4 @@ Folder structure:
 - gold_patients_summary
 
 These tables are used for dashboards and reporting.
+
