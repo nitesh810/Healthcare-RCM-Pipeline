@@ -58,6 +58,5 @@ Tables:
 
 ---
 
-## Interview line
+> "Designed the pipeline using a Medallion Architecture in BigQuery. Bronze stores raw ingested data, Silver contains cleaned CDM tables, and Gold contains KPI tables for dashboards."
 
-> "I designed the pipeline using a Medallion Architecture in BigQuery. Bronze stores raw ingested data, Silver contains cleaned CDM tables, and Gold contains KPI tables for dashboards."
