@@ -22,7 +22,7 @@ def rcm_pipeline_controller(request):
     try:
         # 1. READ CONFIG
         with open("config/sql_config.json", "r") as f:
-            config = json.load(f)
+            config = json.load(f) # json.load(f) reads a JSON file and converts it into a Python dictionary so the program can access values using keys.
 
         bronze_dataset = config["datasets"]["bronze"]
 
@@ -82,5 +82,6 @@ def rcm_pipeline_controller(request):
             "status": "FAILED",
             "error": str(e)
         }), 500
+
 
 
