@@ -9,8 +9,9 @@ It contains:
 
 It is NOT code.
 
-Purpose:
-✅ makes project easy to deploy  
-✅ helps interview explanation  
-✅ shows professional documentation style
+**Purpose:**
+- Makes project easy to deploy  
+- Explanation of this project 
+
+
 
