@@ -73,9 +73,6 @@ Steps:
 
 Cloud Build will run in background automatically and deploy Cloud Run service.
 
-After deployment will get a service URL like:
-https://rcm-pipeline-controller-xxxxx-uc.a.run.app
-
 ---
 
 ## 4) Cloud Scheduler Setup (Daily trigger)
@@ -187,5 +184,6 @@ Developer Changes Code
 ---
 
 > "Used GitHub-based Cloud Run deployment and Scheduler-based orchestration to run a serverless ETL pipeline on GCP using BigQuery Medallion Architecture."
+
 
 
