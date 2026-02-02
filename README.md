@@ -17,8 +17,8 @@ Pipeline Flow:
 
 GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver → Gold
 
-### ASCII Architecture
-```txt
+### Architecture
+
 +-------------------------------+
 | GCS Landing (CSV files)       |
 +---------------+---------------+
@@ -48,3 +48,21 @@ GCS Landing → Cloud Scheduler → Cloud Run → BigQuery Bronze → Silver →
 +-------------------------------+
 | BigQuery Gold (KPIs)          |
 +-------------------------------+
+
+### Architecture Flow
+
+Cloud Scheduler (trigger)
+        │
+        ▼
+Cloud Run Service (this main.py)
+        │
+        ├── Read config JSON
+        │
+        ├── Create Bronze Tables
+        │
+        ├── Load CSV from GCS → Bronze
+        │
+        ├── Execute Silver SQL (SCD, cleansing)
+        │
+        └── Execute Gold SQL (mart/aggregates)
+
