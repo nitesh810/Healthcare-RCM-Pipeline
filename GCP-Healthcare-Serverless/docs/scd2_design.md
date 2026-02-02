@@ -2,8 +2,6 @@
 
 This document explains how SCD Type 2 is implemented for patient dimension.
 
-Note: In this lite version, claims + CPT pipeline works independently. SCD2 is provided as an advanced feature for interview value and for future extension using CloudSQL ingestion.
-
 Target table:
 revcycle_silver.dim_patient
 
@@ -45,3 +43,4 @@ SELECT * FROM revcycle_silver.dim_patient WHERE is_current = TRUE;
 
 To see patient history:
 SELECT * FROM revcycle_silver.dim_patient WHERE patient_id = <id> ORDER BY effective_start_date;
+
