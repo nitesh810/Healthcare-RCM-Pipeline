@@ -22,7 +22,7 @@ def rcm_pipeline_controller(request):
     try:
         # 1. READ CONFIG
         with open("config/sql_config.json", "r") as f:
-            config = json.load(f) # json.load(f) reads a JSON file and converts it into a Python dictionary so the program can access values using keys.
+            config = json.load(f) # reads a JSON file and converts it into a Python dictionary so the program can access values using keys.
 
         bronze_dataset = config["datasets"]["bronze"]
 
@@ -50,6 +50,8 @@ def rcm_pipeline_controller(request):
                 skip_leading_rows=1,
                 autodetect=True,
                 write_disposition="WRITE_TRUNCATE"
+                # WRITE_TRUNCATE deletes existing table data before loading new data.
+                # used it in bronze layer to ensure table always reflects latest source files without duplicates.
             )
 
             bq.load_table_from_uri(
@@ -82,6 +84,7 @@ def rcm_pipeline_controller(request):
             "status": "FAILED",
             "error": str(e)
         }), 500
+
 
 
 
