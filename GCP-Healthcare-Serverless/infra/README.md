@@ -52,17 +52,15 @@ Create these datasets manually (only once):
 - revcycle_bronze
 - revcycle_silver
 - revcycle_gold
-
-Important:
-✅ You do NOT need to create tables manually  
-Cloud Run will run SQL scripts that create tables using CREATE OR REPLACE.
+ 
+Cloud Run will run SQL scripts that create tables.
 
 ---
 
 ## 3) Cloud Run Deployment from GitHub
 
 Deployment method:
-✅ Cloud Run → Continuously deploy from a repository (GitHub)
+Cloud Run → Continuously deploy from a repository (GitHub)
 
 Steps:
 1) Push this project code to GitHub repo
@@ -75,7 +73,7 @@ Steps:
 
 Cloud Build will run in background automatically and deploy Cloud Run service.
 
-After deployment you will get a service URL like:
+After deployment will get a service URL like:
 https://rcm-pipeline-controller-xxxxx-uc.a.run.app
 
 ---
@@ -167,7 +165,7 @@ Developer Changes Code
 
 ### Important Behavior
 
-- ✅ **New Cloud Run deployment happens only when code changes**
+- **New Cloud Run deployment happens only when code changes**
 - If no file is modified →  
   - Cloud Build does NOT create new image  
   - Existing Cloud Run version continues running
@@ -189,4 +187,5 @@ Developer Changes Code
 ---
 
 > "Used GitHub-based Cloud Run deployment and Scheduler-based orchestration to run a serverless ETL pipeline on GCP using BigQuery Medallion Architecture."
+
 
