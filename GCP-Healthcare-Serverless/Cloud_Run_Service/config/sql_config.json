@@ -27,63 +27,39 @@
 
   "bronze_load": [
     {
-      "name": "bronze_claims",
       "source": "claims_path",
-      "target_table": "bronze_claims",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_claims"
     },
     {
-      "name": "bronze_cpt_codes",
       "source": "cpt_path",
-      "target_table": "bronze_cpt_codes",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_cpt_codes"
     },
 
     {
-      "name": "bronze_patients",
       "source": "hospital_a_patients",
-      "target_table": "bronze_patients",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_patients"
     },
     {
-      "name": "bronze_patients",
       "source": "hospital_b_patients",
-      "target_table": "bronze_patients",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_patients"
     },
 
     {
-      "name": "bronze_encounters",
       "source": "hospital_a_encounters",
-      "target_table": "bronze_encounters",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_encounters"
     },
     {
-      "name": "bronze_encounters",
       "source": "hospital_b_encounters",
-      "target_table": "bronze_encounters",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_encounters"
     },
 
     {
-      "name": "bronze_transactions",
       "source": "hospital_a_transactions",
-      "target_table": "bronze_transactions",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_transactions"
     },
     {
-      "name": "bronze_transactions",
       "source": "hospital_b_transactions",
-      "target_table": "bronze_transactions",
-      "skip_leading_rows": 1,
-      "write_disposition": "WRITE_TRUNCATE"
+      "target_table": "bronze_transactions"
     }
   ],
 
